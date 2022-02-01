@@ -4,8 +4,6 @@ import numpy as np
 
 from tqdm import tqdm
 
-root_path = 'DataSource'
-
 def create_source_dataset(root_path): 
     
     current_time = time.time()
