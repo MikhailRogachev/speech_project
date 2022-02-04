@@ -1,5 +1,5 @@
 import pyaudio
-import wave
+import wave, os
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -42,3 +42,5 @@ def write_audio():
         print(ValueError)
     finally:
         wf.close()
+        
+        return os.path.join(os.path.abspath(os.getcwd()), WAVE_OUTPUT_FILENAME)
